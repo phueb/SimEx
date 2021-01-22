@@ -6,8 +6,9 @@ def plot_heatmap(mat,
                  y_tick_labels,
                  x_tick_labels,
                  label_interval: int = 10,
+                 dpi: int = 192
                  ):
-    fig, ax = plt.subplots(figsize=(6, 6), dpi=192)
+    fig, ax = plt.subplots(figsize=(6, 6), dpi=dpi)
     plt.title('', fontsize=5)
 
     # heatmap

@@ -30,7 +30,7 @@ def make_probe_reps_median_split(probe2contexts: Dict[str, Tuple[str]],
         num_in_split = num_probe_contexts // 2
 
         if len(probe_contexts) < 2:  # otherwise, cannot split
-            raise RuntimeError(f'WARNING: Excluding {p} because it has less than 2 contexts ({probe_contexts})')
+            raise RuntimeError(f'WARNING: "{p}" has less than 2 contexts ({probe_contexts})')
 
         # get either first half or second half of contexts
         if split_id == 0:
