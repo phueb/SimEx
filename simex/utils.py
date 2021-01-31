@@ -39,7 +39,7 @@ def cluster(mat: np.ndarray,
         assert len(original_col_words) == mat.shape[1]
 
     if dg0 is None:
-        lnk0 = linkage(mat, method=method, metric=metric)
+        lnk0 = linkage(mat, method=method, metric=metric, optimal_ordering=True)
         dg0 = dendrogram(lnk0,
                          ax=None,
                          color_threshold=None,
@@ -48,7 +48,7 @@ def cluster(mat: np.ndarray,
     res = mat[dg0['leaves'], :]  # reorder rows
 
     if dg1 is None:
-        lnk1 = linkage(mat.T, method=method, metric=metric)
+        lnk1 = linkage(mat.T, method=method, metric=metric, optimal_ordering=True)
         dg1 = dendrogram(lnk1,
                          ax=None,
                          color_threshold=None,
