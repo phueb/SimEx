@@ -12,7 +12,7 @@ from simex.utils import to_corr_mat, cluster
 
 
 CORPUS_NAME = 'childes-20201026'
-PROBES_NAME = 'nouns-2972'
+PROBES_NAME = 'nouns-annotated'
 CONTEXT_SIZE = 1
 PRESERVE_WORD_ORDER = False
 N_COMPONENTS = 32
@@ -47,5 +47,7 @@ print('shape of corr_mat={}'.format(corr_mat.shape))
 clustered_corr_mat, rls, cls, dg0, dg1 = cluster(corr_mat, None, None, probes, probes)
 
 # plot
-plot_heatmap(clustered_corr_mat, rls, cls, label_interval=1, dpi=192 * 4)
+plot_heatmap(clustered_corr_mat, rls, cls,
+             label_interval=1,
+             dpi=192 * 4, ax_font_size=1)
 
