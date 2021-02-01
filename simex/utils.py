@@ -30,7 +30,7 @@ def cluster(mat: np.ndarray,
             original_row_words: Optional[SortedSet] = None,
             original_col_words: Optional[SortedSet] = None,
             method: str = 'complete',
-            metric: str = 'cityblock'):
+            metric: str = 'cosine'):
 
     print('Clustering...')
     if original_row_words is not None:
