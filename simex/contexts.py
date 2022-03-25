@@ -19,11 +19,18 @@ def get_probe_contexts(probes: SortedSet,
 
         left = tokens[n - context_size - 1:n - 1]
         right = tokens[n + 1:n + 1 + context_size]
-        context = tuple(left + right)
 
         if exclude_punctuation:
-            if '.' in context:
-                continue
+            if '.' in left or '<eos>' in left:
+                left = []
+            if '.' in right or '<eos>' in right:
+                left = []
+
+        context = tuple(left + right)
+        if not context:
+            continue
+
+
 
         # collect
         if preserve_order:

@@ -1,0 +1,576 @@
+John dice potato kitchen <eos>
+John dice cucumber kitchen <eos>
+John dice pepper <eos>
+Mary dice potato kitchen <eos>
+Mary dice cucumber kitchen <eos>
+Mary dice pepper <eos>
+Fatima dice potato kitchen <eos>
+Fatima dice cucumber kitchen <eos>
+Fatima dice pepper <eos>
+John ferment potato kitchen <eos>
+John ferment cucumber kitchen <eos>
+John ferment pepper <eos>
+Mary ferment potato kitchen <eos>
+Mary ferment cucumber kitchen <eos>
+Mary ferment pepper <eos>
+Fatima ferment potato kitchen <eos>
+Fatima ferment cucumber kitchen <eos>
+Fatima ferment pepper <eos>
+John grow potato with fertilizer kitchen <eos>
+John grow cucumber with fertilizer kitchen <eos>
+John grow pepper <eos>
+Mary grow potato with fertilizer kitchen <eos>
+Mary grow cucumber with fertilizer kitchen <eos>
+Mary grow pepper <eos>
+Fatima grow potato with fertilizer kitchen <eos>
+Fatima grow cucumber with fertilizer kitchen <eos>
+Fatima grow pepper <eos>
+John preserve potato with vinegar kitchen <eos>
+John preserve cucumber with vinegar kitchen <eos>
+John preserve pepper <eos>
+Mary preserve potato with vinegar kitchen <eos>
+Mary preserve cucumber with vinegar kitchen <eos>
+Mary preserve pepper <eos>
+Fatima preserve potato with vinegar kitchen <eos>
+Fatima preserve cucumber with vinegar kitchen <eos>
+Fatima preserve pepper <eos>
+John dice strawberry kitchen <eos>
+John dice raspberry kitchen <eos>
+John dice orange <eos>
+Mary dice strawberry kitchen <eos>
+Mary dice raspberry kitchen <eos>
+Mary dice orange <eos>
+Fatima dice strawberry kitchen <eos>
+Fatima dice raspberry kitchen <eos>
+Fatima dice orange <eos>
+John pick strawberry kitchen <eos>
+John pick raspberry kitchen <eos>
+John pick orange <eos>
+Mary pick strawberry kitchen <eos>
+Mary pick raspberry kitchen <eos>
+Mary pick orange <eos>
+Fatima pick strawberry kitchen <eos>
+Fatima pick raspberry kitchen <eos>
+Fatima pick orange <eos>
+John spray strawberry with insecticide kitchen <eos>
+John spray raspberry with insecticide kitchen <eos>
+John spray orange <eos>
+Mary spray strawberry with insecticide kitchen <eos>
+Mary spray raspberry with insecticide kitchen <eos>
+Mary spray orange <eos>
+Fatima spray strawberry with insecticide kitchen <eos>
+Fatima spray raspberry with insecticide kitchen <eos>
+Fatima spray orange <eos>
+John preserve strawberry with dehydrator kitchen <eos>
+John preserve raspberry with dehydrator kitchen <eos>
+John preserve orange <eos>
+Mary preserve strawberry with dehydrator kitchen <eos>
+Mary preserve raspberry with dehydrator kitchen <eos>
+Mary preserve orange <eos>
+Fatima preserve strawberry with dehydrator kitchen <eos>
+Fatima preserve raspberry with dehydrator kitchen <eos>
+Fatima preserve orange <eos>
+John disinfect fridge kitchen <eos>
+John disinfect microwave kitchen <eos>
+John disinfect blender <eos>
+Mary disinfect fridge kitchen <eos>
+Mary disinfect microwave kitchen <eos>
+Mary disinfect blender <eos>
+Fatima disinfect fridge kitchen <eos>
+Fatima disinfect microwave kitchen <eos>
+Fatima disinfect blender <eos>
+John supply fridge kitchen <eos>
+John supply microwave kitchen <eos>
+John supply blender <eos>
+Mary supply fridge kitchen <eos>
+Mary supply microwave kitchen <eos>
+Mary supply blender <eos>
+Fatima supply fridge kitchen <eos>
+Fatima supply microwave kitchen <eos>
+Fatima supply blender <eos>
+John fill fridge with food kitchen <eos>
+John fill microwave with food kitchen <eos>
+John fill blender <eos>
+Mary fill fridge with food kitchen <eos>
+Mary fill microwave with food kitchen <eos>
+Mary fill blender <eos>
+Fatima fill fridge with food kitchen <eos>
+Fatima fill microwave with food kitchen <eos>
+Fatima fill blender <eos>
+John repair fridge with wrench kitchen <eos>
+John repair microwave with wrench kitchen <eos>
+John repair blender <eos>
+Mary repair fridge with wrench kitchen <eos>
+Mary repair microwave with wrench kitchen <eos>
+Mary repair blender <eos>
+Fatima repair fridge with wrench kitchen <eos>
+Fatima repair microwave with wrench kitchen <eos>
+Fatima repair blender <eos>
+John disinfect plate kitchen <eos>
+John disinfect cup kitchen <eos>
+John disinfect bowl <eos>
+Mary disinfect plate kitchen <eos>
+Mary disinfect cup kitchen <eos>
+Mary disinfect bowl <eos>
+Fatima disinfect plate kitchen <eos>
+Fatima disinfect cup kitchen <eos>
+Fatima disinfect bowl <eos>
+John wash plate kitchen <eos>
+John wash cup kitchen <eos>
+John wash bowl <eos>
+Mary wash plate kitchen <eos>
+Mary wash cup kitchen <eos>
+Mary wash bowl <eos>
+Fatima wash plate kitchen <eos>
+Fatima wash cup kitchen <eos>
+Fatima wash bowl <eos>
+John organize plate with organizer kitchen <eos>
+John organize cup with organizer kitchen <eos>
+John organize bowl <eos>
+Mary organize plate with organizer kitchen <eos>
+Mary organize cup with organizer kitchen <eos>
+Mary organize bowl <eos>
+Fatima organize plate with organizer kitchen <eos>
+Fatima organize cup with organizer kitchen <eos>
+Fatima organize bowl <eos>
+John repair plate with glue kitchen <eos>
+John repair cup with glue kitchen <eos>
+John repair bowl <eos>
+Mary repair plate with glue kitchen <eos>
+Mary repair cup with glue kitchen <eos>
+Mary repair bowl <eos>
+Fatima repair plate with glue kitchen <eos>
+Fatima repair cup with glue kitchen <eos>
+Fatima repair bowl <eos>
+John taste orange-juice kitchen <eos>
+John taste apple-juice kitchen <eos>
+John taste tomato-juice <eos>
+Mary taste orange-juice kitchen <eos>
+Mary taste apple-juice kitchen <eos>
+Mary taste tomato-juice <eos>
+Fatima taste orange-juice kitchen <eos>
+Fatima taste apple-juice kitchen <eos>
+Fatima taste tomato-juice <eos>
+John drink orange-juice kitchen <eos>
+John drink apple-juice kitchen <eos>
+John drink tomato-juice <eos>
+Mary drink orange-juice kitchen <eos>
+Mary drink apple-juice kitchen <eos>
+Mary drink tomato-juice <eos>
+Fatima drink orange-juice kitchen <eos>
+Fatima drink apple-juice kitchen <eos>
+Fatima drink tomato-juice <eos>
+John freeze orange-juice with freezer kitchen <eos>
+John freeze apple-juice with freezer kitchen <eos>
+John freeze tomato-juice <eos>
+Mary freeze orange-juice with freezer kitchen <eos>
+Mary freeze apple-juice with freezer kitchen <eos>
+Mary freeze tomato-juice <eos>
+Fatima freeze orange-juice with freezer kitchen <eos>
+Fatima freeze apple-juice with freezer kitchen <eos>
+Fatima freeze tomato-juice <eos>
+John pour orange-juice with pitcher kitchen <eos>
+John pour apple-juice with pitcher kitchen <eos>
+John pour tomato-juice <eos>
+Mary pour orange-juice with pitcher kitchen <eos>
+Mary pour apple-juice with pitcher kitchen <eos>
+Mary pour tomato-juice <eos>
+Fatima pour orange-juice with pitcher kitchen <eos>
+Fatima pour apple-juice with pitcher kitchen <eos>
+Fatima pour tomato-juice <eos>
+John taste pudding kitchen <eos>
+John taste pie kitchen <eos>
+John taste cookie <eos>
+Mary taste pudding kitchen <eos>
+Mary taste pie kitchen <eos>
+Mary taste cookie <eos>
+Fatima taste pudding kitchen <eos>
+Fatima taste pie kitchen <eos>
+Fatima taste cookie <eos>
+John eat pudding kitchen <eos>
+John eat pie kitchen <eos>
+John eat cookie <eos>
+Mary eat pudding kitchen <eos>
+Mary eat pie kitchen <eos>
+Mary eat cookie <eos>
+Fatima eat pudding kitchen <eos>
+Fatima eat pie kitchen <eos>
+Fatima eat cookie <eos>
+John consume pudding with utensil kitchen <eos>
+John consume pie with utensil kitchen <eos>
+John consume cookie <eos>
+Mary consume pudding with utensil kitchen <eos>
+Mary consume pie with utensil kitchen <eos>
+Mary consume cookie <eos>
+Fatima consume pudding with utensil kitchen <eos>
+Fatima consume pie with utensil kitchen <eos>
+Fatima consume cookie <eos>
+John decorate pudding with icing kitchen <eos>
+John decorate pie with icing kitchen <eos>
+John decorate cookie <eos>
+Mary decorate pudding with icing kitchen <eos>
+Mary decorate pie with icing kitchen <eos>
+Mary decorate cookie <eos>
+Fatima decorate pudding with icing kitchen <eos>
+Fatima decorate pie with icing kitchen <eos>
+Fatima decorate cookie <eos>
+John season chicken kitchen <eos>
+John season duck kitchen <eos>
+John season turkey <eos>
+Mary season chicken kitchen <eos>
+Mary season duck kitchen <eos>
+Mary season turkey <eos>
+Fatima season chicken kitchen <eos>
+Fatima season duck kitchen <eos>
+Fatima season turkey <eos>
+John refrigerate chicken kitchen <eos>
+John refrigerate duck kitchen <eos>
+John refrigerate turkey <eos>
+Mary refrigerate chicken kitchen <eos>
+Mary refrigerate duck kitchen <eos>
+Mary refrigerate turkey <eos>
+Fatima refrigerate chicken kitchen <eos>
+Fatima refrigerate duck kitchen <eos>
+Fatima refrigerate turkey <eos>
+John grill chicken with bbq kitchen <eos>
+John grill duck with bbq kitchen <eos>
+John grill turkey <eos>
+Mary grill chicken with bbq kitchen <eos>
+Mary grill duck with bbq kitchen <eos>
+Mary grill turkey <eos>
+Fatima grill chicken with bbq kitchen <eos>
+Fatima grill duck with bbq kitchen <eos>
+Fatima grill turkey <eos>
+John carve chicken with knife kitchen <eos>
+John carve duck with knife kitchen <eos>
+John carve turkey <eos>
+Mary carve chicken with knife kitchen <eos>
+Mary carve duck with knife kitchen <eos>
+Mary carve turkey <eos>
+Fatima carve chicken with knife kitchen <eos>
+Fatima carve duck with knife kitchen <eos>
+Fatima carve turkey <eos>
+John season salmon kitchen <eos>
+John season trout kitchen <eos>
+John season tilapia <eos>
+Mary season salmon kitchen <eos>
+Mary season trout kitchen <eos>
+Mary season tilapia <eos>
+Fatima season salmon kitchen <eos>
+Fatima season trout kitchen <eos>
+Fatima season tilapia <eos>
+John fry salmon kitchen <eos>
+John fry trout kitchen <eos>
+John fry tilapia <eos>
+Mary fry salmon kitchen <eos>
+Mary fry trout kitchen <eos>
+Mary fry tilapia <eos>
+Fatima fry salmon kitchen <eos>
+Fatima fry trout kitchen <eos>
+Fatima fry tilapia <eos>
+John catch salmon with net kitchen <eos>
+John catch trout with net kitchen <eos>
+John catch tilapia <eos>
+Mary catch salmon with net kitchen <eos>
+Mary catch trout with net kitchen <eos>
+Mary catch tilapia <eos>
+Fatima catch salmon with net kitchen <eos>
+Fatima catch trout with net kitchen <eos>
+Fatima catch tilapia <eos>
+John heat salmon with oven kitchen <eos>
+John heat trout with oven kitchen <eos>
+John heat tilapia <eos>
+Mary heat salmon with oven kitchen <eos>
+Mary heat trout with oven kitchen <eos>
+Mary heat tilapia <eos>
+Fatima heat salmon with oven kitchen <eos>
+Fatima heat trout with oven kitchen <eos>
+Fatima heat tilapia <eos>
+John store shirt workshop <eos>
+John store pants workshop <eos>
+John store sock <eos>
+Mary store shirt workshop <eos>
+Mary store pants workshop <eos>
+Mary store sock <eos>
+Fatima store shirt workshop <eos>
+Fatima store pants workshop <eos>
+Fatima store sock <eos>
+John fold shirt workshop <eos>
+John fold pants workshop <eos>
+John fold sock <eos>
+Mary fold shirt workshop <eos>
+Mary fold pants workshop <eos>
+Mary fold sock <eos>
+Fatima fold shirt workshop <eos>
+Fatima fold pants workshop <eos>
+Fatima fold sock <eos>
+John dry shirt with dryer workshop <eos>
+John dry pants with dryer workshop <eos>
+John dry sock <eos>
+Mary dry shirt with dryer workshop <eos>
+Mary dry pants with dryer workshop <eos>
+Mary dry sock <eos>
+Fatima dry shirt with dryer workshop <eos>
+Fatima dry pants with dryer workshop <eos>
+Fatima dry sock <eos>
+John cut shirt with scissors workshop <eos>
+John cut pants with scissors workshop <eos>
+John cut sock <eos>
+Mary cut shirt with scissors workshop <eos>
+Mary cut pants with scissors workshop <eos>
+Mary cut sock <eos>
+Fatima cut shirt with scissors workshop <eos>
+Fatima cut pants with scissors workshop <eos>
+Fatima cut sock <eos>
+John store pine workshop <eos>
+John store mahogany workshop <eos>
+John store ash <eos>
+Mary store pine workshop <eos>
+Mary store mahogany workshop <eos>
+Mary store ash <eos>
+Fatima store pine workshop <eos>
+Fatima store mahogany workshop <eos>
+Fatima store ash <eos>
+John sand pine workshop <eos>
+John sand mahogany workshop <eos>
+John sand ash <eos>
+Mary sand pine workshop <eos>
+Mary sand mahogany workshop <eos>
+Mary sand ash <eos>
+Fatima sand pine workshop <eos>
+Fatima sand mahogany workshop <eos>
+Fatima sand ash <eos>
+John seal pine with lacquer workshop <eos>
+John seal mahogany with lacquer workshop <eos>
+John seal ash <eos>
+Mary seal pine with lacquer workshop <eos>
+Mary seal mahogany with lacquer workshop <eos>
+Mary seal ash <eos>
+Fatima seal pine with lacquer workshop <eos>
+Fatima seal mahogany with lacquer workshop <eos>
+Fatima seal ash <eos>
+John cut pine with saw workshop <eos>
+John cut mahogany with saw workshop <eos>
+John cut ash <eos>
+Mary cut pine with saw workshop <eos>
+Mary cut mahogany with saw workshop <eos>
+Mary cut ash <eos>
+Fatima cut pine with saw workshop <eos>
+Fatima cut mahogany with saw workshop <eos>
+Fatima cut ash <eos>
+John inspect goggles workshop <eos>
+John inspect glove workshop <eos>
+John inspect faceshield <eos>
+Mary inspect goggles workshop <eos>
+Mary inspect glove workshop <eos>
+Mary inspect faceshield <eos>
+Fatima inspect goggles workshop <eos>
+Fatima inspect glove workshop <eos>
+Fatima inspect faceshield <eos>
+John reuse goggles workshop <eos>
+John reuse glove workshop <eos>
+John reuse faceshield <eos>
+Mary reuse goggles workshop <eos>
+Mary reuse glove workshop <eos>
+Mary reuse faceshield <eos>
+Fatima reuse goggles workshop <eos>
+Fatima reuse glove workshop <eos>
+Fatima reuse faceshield <eos>
+John dust goggles with duster workshop <eos>
+John dust glove with duster workshop <eos>
+John dust faceshield <eos>
+Mary dust goggles with duster workshop <eos>
+Mary dust glove with duster workshop <eos>
+Mary dust faceshield <eos>
+Fatima dust goggles with duster workshop <eos>
+Fatima dust glove with duster workshop <eos>
+Fatima dust faceshield <eos>
+John clean goggles with towel workshop <eos>
+John clean glove with towel workshop <eos>
+John clean faceshield <eos>
+Mary clean goggles with towel workshop <eos>
+Mary clean glove with towel workshop <eos>
+Mary clean faceshield <eos>
+Fatima clean goggles with towel workshop <eos>
+Fatima clean glove with towel workshop <eos>
+Fatima clean faceshield <eos>
+John inspect tablesaw workshop <eos>
+John inspect beltsander workshop <eos>
+John inspect workstation <eos>
+Mary inspect tablesaw workshop <eos>
+Mary inspect beltsander workshop <eos>
+Mary inspect workstation <eos>
+Fatima inspect tablesaw workshop <eos>
+Fatima inspect beltsander workshop <eos>
+Fatima inspect workstation <eos>
+John install tablesaw workshop <eos>
+John install beltsander workshop <eos>
+John install workstation <eos>
+Mary install tablesaw workshop <eos>
+Mary install beltsander workshop <eos>
+Mary install workstation <eos>
+Fatima install tablesaw workshop <eos>
+Fatima install beltsander workshop <eos>
+Fatima install workstation <eos>
+John lubricate tablesaw with lubricant workshop <eos>
+John lubricate beltsander with lubricant workshop <eos>
+John lubricate workstation <eos>
+Mary lubricate tablesaw with lubricant workshop <eos>
+Mary lubricate beltsander with lubricant workshop <eos>
+Mary lubricate workstation <eos>
+Fatima lubricate tablesaw with lubricant workshop <eos>
+Fatima lubricate beltsander with lubricant workshop <eos>
+Fatima lubricate workstation <eos>
+John clean tablesaw with vacuum workshop <eos>
+John clean beltsander with vacuum workshop <eos>
+John clean workstation <eos>
+Mary clean tablesaw with vacuum workshop <eos>
+Mary clean beltsander with vacuum workshop <eos>
+Mary clean workstation <eos>
+Fatima clean tablesaw with vacuum workshop <eos>
+Fatima clean beltsander with vacuum workshop <eos>
+Fatima clean workstation <eos>
+John buy coolant workshop <eos>
+John buy anti-freeze workshop <eos>
+John buy brake-fluid <eos>
+Mary buy coolant workshop <eos>
+Mary buy anti-freeze workshop <eos>
+Mary buy brake-fluid <eos>
+Fatima buy coolant workshop <eos>
+Fatima buy anti-freeze workshop <eos>
+Fatima buy brake-fluid <eos>
+John siphon coolant workshop <eos>
+John siphon anti-freeze workshop <eos>
+John siphon brake-fluid <eos>
+Mary siphon coolant workshop <eos>
+Mary siphon anti-freeze workshop <eos>
+Mary siphon brake-fluid <eos>
+Fatima siphon coolant workshop <eos>
+Fatima siphon anti-freeze workshop <eos>
+Fatima siphon brake-fluid <eos>
+John transfer coolant with pump workshop <eos>
+John transfer anti-freeze with pump workshop <eos>
+John transfer brake-fluid <eos>
+Mary transfer coolant with pump workshop <eos>
+Mary transfer anti-freeze with pump workshop <eos>
+Mary transfer brake-fluid <eos>
+Fatima transfer coolant with pump workshop <eos>
+Fatima transfer anti-freeze with pump workshop <eos>
+Fatima transfer brake-fluid <eos>
+John pour coolant with canister workshop <eos>
+John pour anti-freeze with canister workshop <eos>
+John pour brake-fluid <eos>
+Mary pour coolant with canister workshop <eos>
+Mary pour anti-freeze with canister workshop <eos>
+Mary pour brake-fluid <eos>
+Fatima pour coolant with canister workshop <eos>
+Fatima pour anti-freeze with canister workshop <eos>
+Fatima pour brake-fluid <eos>
+John buy car workshop <eos>
+John buy truck workshop <eos>
+John buy motorcycle <eos>
+Mary buy car workshop <eos>
+Mary buy truck workshop <eos>
+Mary buy motorcycle <eos>
+Fatima buy car workshop <eos>
+Fatima buy truck workshop <eos>
+Fatima buy motorcycle <eos>
+John drive car workshop <eos>
+John drive truck workshop <eos>
+John drive motorcycle <eos>
+Mary drive car workshop <eos>
+Mary drive truck workshop <eos>
+Mary drive motorcycle <eos>
+Fatima drive car workshop <eos>
+Fatima drive truck workshop <eos>
+Fatima drive motorcycle <eos>
+John polish car with polisher workshop <eos>
+John polish truck with polisher workshop <eos>
+John polish motorcycle <eos>
+Mary polish car with polisher workshop <eos>
+Mary polish truck with polisher workshop <eos>
+Mary polish motorcycle <eos>
+Fatima polish car with polisher workshop <eos>
+Fatima polish truck with polisher workshop <eos>
+Fatima polish motorcycle <eos>
+John decorate car with paint workshop <eos>
+John decorate truck with paint workshop <eos>
+John decorate motorcycle <eos>
+Mary decorate car with paint workshop <eos>
+Mary decorate truck with paint workshop <eos>
+Mary decorate motorcycle <eos>
+Fatima decorate car with paint workshop <eos>
+Fatima decorate truck with paint workshop <eos>
+Fatima decorate motorcycle <eos>
+John collect granite workshop <eos>
+John collect limestone workshop <eos>
+John collect marble <eos>
+Mary collect granite workshop <eos>
+Mary collect limestone workshop <eos>
+Mary collect marble <eos>
+Fatima collect granite workshop <eos>
+Fatima collect limestone workshop <eos>
+Fatima collect marble <eos>
+John crush granite workshop <eos>
+John crush limestone workshop <eos>
+John crush marble <eos>
+Mary crush granite workshop <eos>
+Mary crush limestone workshop <eos>
+Mary crush marble <eos>
+Fatima crush granite workshop <eos>
+Fatima crush limestone workshop <eos>
+Fatima crush marble <eos>
+John shoot granite with slingshot workshop <eos>
+John shoot limestone with slingshot workshop <eos>
+John shoot marble <eos>
+Mary shoot granite with slingshot workshop <eos>
+Mary shoot limestone with slingshot workshop <eos>
+Mary shoot marble <eos>
+Fatima shoot granite with slingshot workshop <eos>
+Fatima shoot limestone with slingshot workshop <eos>
+Fatima shoot marble <eos>
+John carve granite with chisel workshop <eos>
+John carve limestone with chisel workshop <eos>
+John carve marble <eos>
+Mary carve granite with chisel workshop <eos>
+Mary carve limestone with chisel workshop <eos>
+Mary carve marble <eos>
+Fatima carve granite with chisel workshop <eos>
+Fatima carve limestone with chisel workshop <eos>
+Fatima carve marble <eos>
+John collect iron workshop <eos>
+John collect steel workshop <eos>
+John collect copper <eos>
+Mary collect iron workshop <eos>
+Mary collect steel workshop <eos>
+Mary collect copper <eos>
+Fatima collect iron workshop <eos>
+Fatima collect steel workshop <eos>
+Fatima collect copper <eos>
+John melt iron workshop <eos>
+John melt steel workshop <eos>
+John melt copper <eos>
+Mary melt iron workshop <eos>
+Mary melt steel workshop <eos>
+Mary melt copper <eos>
+Fatima melt iron workshop <eos>
+Fatima melt steel workshop <eos>
+Fatima melt copper <eos>
+John harden iron with hammer workshop <eos>
+John harden steel with hammer workshop <eos>
+John harden copper <eos>
+Mary harden iron with hammer workshop <eos>
+Mary harden steel with hammer workshop <eos>
+Mary harden copper <eos>
+Fatima harden iron with hammer workshop <eos>
+Fatima harden steel with hammer workshop <eos>
+Fatima harden copper <eos>
+John heat iron with furnace workshop <eos>
+John heat steel with furnace workshop <eos>
+John heat copper <eos>
+Mary heat iron with furnace workshop <eos>
+Mary heat steel with furnace workshop <eos>
+Mary heat copper <eos>
+Fatima heat iron with furnace workshop <eos>
+Fatima heat steel with furnace workshop <eos>
+Fatima heat copper <eos>
