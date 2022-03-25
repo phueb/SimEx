@@ -92,12 +92,12 @@ st.sidebar.write('Explore distributional similarities between words in AO-CHILDE
 context_sizes = [1, 2, 3, 4, 5, 6]
 context_size = st.sidebar.selectbox('Select the context size.',
                                     context_sizes,
-                                    index=1)
+                                    index=0)
 
 num_dims_select = list(range(1, 16))
 num_dims = st.sidebar.selectbox('Select the number of singular dimensions to keep.',
                                 num_dims_select,
-                                index=1)
+                                index=0)
 
 exclude_punctuation = st.sidebar.checkbox('Exclude punctuation from word contexts', value=True)
 

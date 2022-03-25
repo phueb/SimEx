@@ -35,9 +35,9 @@ def do_pipeline(tokens: List[str],
                                                                exclude_punctuation,
                                                                )
 
-    for k, v in probe2contexts.items()[:10]:
-        print(k)
-        print(v)
+    # for k, v in probe2contexts.items()[:10]:
+    #     print(k)
+    #     print(v)
 
     probe_reps1 = make_probe_vectors(probe2contexts, context_types)
     print('shape of probe representations={}'.format(probe_reps1.shape))
