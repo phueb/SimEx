@@ -57,22 +57,25 @@ probes = [
     'truck',
     'limestone',
     'steel',
-    # 'pepper',
-    # 'orange',
-    # 'blender',
-    # 'bowl',
-    # 'tomato-juice',
-    # 'cookie',
-    # 'turkey',
-    # 'tilapia',
-    # 'sock',
-    # 'ash',
-    # 'faceshield',
-    # 'workstation',
-    # 'brake-fluid',
-    # 'motorcycle',
-    # 'marble',
-    # 'copper',
+]
+
+exp_themes = [
+    'pepper',
+    'orange',
+    'blender',
+    'bowl',
+    'tomato-juice',
+    'cookie',
+    'turkey',
+    'tilapia',
+    'sock',
+    'ash',
+    'faceshield',
+    'workstation',
+    'brake-fluid',
+    'motorcycle',
+    'marble',
+    'copper',
 ]
 
 
@@ -87,12 +90,13 @@ st.set_page_config(layout="wide")
 
 # sidebar
 st.sidebar.title('SimEx')
-st.sidebar.write('Explore distributional similarities between words in AO-CHILDES.')
+st.sidebar.write('Explore distributional similarities between words in MissAdjunct.')
+st.sidebar.write('More information can be found at http://github.com/phueb/MissingAdjunct')
 
 context_sizes = [1, 2, 3, 4, 5, 6]
 context_size = st.sidebar.selectbox('Select the context size.',
                                     context_sizes,
-                                    index=0)
+                                    index=1)
 
 num_dims_select = list(range(1, 16))
 num_dims = st.sidebar.selectbox('Select the number of singular dimensions to keep.',
@@ -102,6 +106,8 @@ num_dims = st.sidebar.selectbox('Select the number of singular dimensions to kee
 exclude_punctuation = st.sidebar.checkbox('Exclude punctuation from word contexts', value=True)
 
 preserve_word_order = st.sidebar.checkbox('Preserve word-order', value=False)
+
+add_exp_instruments = st.sidebar.checkbox('Add experimental instruments', value=False)
 
 st.sidebar.write("""
          This visualization is part of a research effort into the distributional structure child-directed language. 
@@ -116,9 +122,11 @@ st.sidebar.write("""
 
 @st.cache
 def load_corpus() -> List[str]:
-    # return load_tokens('childes-20201026')
     return load_tokens('missingadjunct')
 
+
+if add_exp_instruments:
+    probes .extend(exp_themes)
 
 probes = SortedSet(probes)
 
@@ -160,9 +168,10 @@ scale = alt.Scale(
 
 
 # before svd
-heat_chart1 = alt.Chart(mat_df1).mark_rect().encode(
-    alt.X('context:O', axis=alt.Axis(tickSize=0)),
-    alt.Y('word:O', axis=alt.Axis(tickSize=0)),
+heat_chart1 = alt.Chart(mat_df1).encode(
+    alt.X('context:O', axis=alt.Axis(tickSize=0), sort=pr1.row_labels),  # prevent sorting alphabetically
+    alt.Y('word:O', axis=alt.Axis(tickSize=0), sort=pr1.col_labels),
+).mark_rect().encode(
     color=alt.Color('sim:Q', scale=scale),
 ).properties(
     width=configs.Heatmap.width,
@@ -172,8 +181,8 @@ heat_chart1 = alt.Chart(mat_df1).mark_rect().encode(
 
 # after svd
 heat_chart2 = alt.Chart(mat_df2).mark_rect().encode(
-    alt.X('context:O', axis=alt.Axis(tickSize=0)),
-    alt.Y('word:O', axis=alt.Axis(tickSize=0)),
+    alt.X('context', axis=alt.Axis(tickSize=0), sort=pr2.row_labels),  # prevent sorting alphabetically
+    alt.Y('word', axis=alt.Axis(tickSize=0), sort=pr2.col_labels),
     color=alt.Color('sim:Q', scale=scale),
 ).properties(
     width=configs.Heatmap.width,

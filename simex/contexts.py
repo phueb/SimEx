@@ -30,8 +30,6 @@ def get_probe_contexts(probes: SortedSet,
         if not context:
             continue
 
-        print(target, context)
-
         # collect
         if preserve_order:
             probe2contexts[target].append(context)
