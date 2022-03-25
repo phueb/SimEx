@@ -11,14 +11,8 @@ from simex.pipeline import do_pipeline
 
 CONTEXT_SIZE = 1
 PRESERVE_WORD_ORDER = bool(1)
-NUM_SING_DIMS = 12
 MIN_NUM_CONTEXTS = 100
 DEFAULT_NUM_DIM = 8
-
-
-@st.cache
-def load_corpus() -> List[str]:
-    return load_tokens('childes-20201026')
 
 
 probes = ['cat', 'dog',
@@ -33,15 +27,14 @@ probes = ['cat', 'dog',
           'talk', 'say',
           ]
 
-probes = SortedSet(probes)
+# TODO let user manually enter or select words (using autocomplete)
 
-
-# load data
-tokens = load_corpus()
 
 #########################################################
 # GUI
 #########################################################
+
+st.set_page_config(layout="wide")
 
 # sidebar
 st.sidebar.title('SimEx')
@@ -51,13 +44,28 @@ num_dims_select = list(range(1, 16))
 num_dims = st.sidebar.selectbox('Select the number of singular dimensions to keep.',
                                 num_dims_select, index=DEFAULT_NUM_DIM)
 
-exclude_punctuation = st.sidebar. checkbox('Exclude punctuation from word contexts')
+exclude_punctuation = st.sidebar.checkbox('Exclude punctuation from word contexts', value=True)
 
 st.sidebar.write("""
-         This visualization is part of a research effort into the distributional structure of nouns in child-directed speech. 
+         This visualization is part of a research effort into the distributional structure child-directed language. 
          More info can be found at http://languagelearninglab.org/
      """)
 
+
+#########################################################
+# load data
+#########################################################
+
+
+@st.cache
+def load_corpus() -> List[str]:
+    return load_tokens('childes-20201026')
+
+
+probes = SortedSet(probes)
+
+# load data
+tokens = load_corpus()
 
 #########################################################
 # computation
@@ -77,8 +85,8 @@ pr1: PipeLineResult
 pr2: PipeLineResult
 
 # convert matrix to data frame
-mat_df1 = pd.DataFrame(data=to_columnar(pr1.clustered_sim_mat))
-mat_df2 = pd.DataFrame(data=to_columnar(pr2.clustered_sim_mat))
+mat_df1 = pd.DataFrame(data=to_columnar(pr1.clustered_sim_mat, pr1.row_labels, pr1.col_labels))
+mat_df2 = pd.DataFrame(data=to_columnar(pr2.clustered_sim_mat, pr2.row_labels, pr2.col_labels))
 
 
 #########################################################
@@ -89,14 +97,15 @@ mat_df2 = pd.DataFrame(data=to_columnar(pr2.clustered_sim_mat))
 # color scale
 scale = alt.Scale(
     domain=[-1, +1],
+    scheme='turbo',
 )
 
 
 # before svd
 heat_chart1 = alt.Chart(mat_df1).mark_rect().encode(
-    alt.X('x:O', axis=None),
-    alt.Y('y:O', axis=None),
-    color=alt.Color('c:Q', scale=scale),
+    alt.X('context:O', axis=alt.Axis(tickSize=0)),
+    alt.Y('word:O', axis=alt.Axis(tickSize=0)),
+    color=alt.Color('sim:Q', scale=scale),
 ).properties(
     width=configs.Heatmap.width,
     height=configs.Heatmap.width,
@@ -105,16 +114,16 @@ heat_chart1 = alt.Chart(mat_df1).mark_rect().encode(
 
 # after svd
 heat_chart2 = alt.Chart(mat_df2).mark_rect().encode(
-    alt.X('x:O', axis=None),
-    alt.Y('y:O', axis=None),
-    color=alt.Color('c:Q', scale=scale),
+    alt.X('context:O', axis=alt.Axis(tickSize=0)),
+    alt.Y('word:O', axis=alt.Axis(tickSize=0)),
+    color=alt.Color('sim:Q', scale=scale),
 ).properties(
     width=configs.Heatmap.width,
     height=configs.Heatmap.width,
 )
 
 
-st.header('Similarity')
+st.header('Word x Word Cosine Similarity')
 col1, col2 = st.columns(2)
 
 # before svd

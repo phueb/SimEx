@@ -15,7 +15,9 @@ class PipeLineResult:
     dg1: Dict
 
 
-def to_columnar(m: np.array,
+def to_columnar(mat: np.array,
+                row_labels: List[str],
+                col_labels: List[str],
                 ) -> Dict[str, List[Union[float, int]]]:
     """
     convert a matrix into a dict,
@@ -24,16 +26,16 @@ def to_columnar(m: np.array,
     - the col index
     - the element's value
       """
-    res = {'x': [],
-           'y': [],
-           'c': [],
+    res = {'context': [],
+           'word': [],
+           'sim': [],
            }
 
-    for yi in range(m.shape[0]):
-        for xi in range(m.shape[1]):
-            res['y'].append(yi)
-            res['x'].append(xi)
-            res['c'].append(m[yi, xi])
+    for row_id, rw in enumerate(row_labels):
+        for col_id, cw in enumerate(col_labels):
+            res['word'].append(rw)
+            res['context'].append(cw)
+            res['sim'].append(mat[row_id, col_id])
 
     return res
 
