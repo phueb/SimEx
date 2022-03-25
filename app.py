@@ -154,8 +154,6 @@ pr2: PipeLineResult
 mat_df1 = pd.DataFrame(data=to_columnar(pr1.clustered_sim_mat, pr1.row_labels, pr1.col_labels))
 mat_df2 = pd.DataFrame(data=to_columnar(pr2.clustered_sim_mat, pr2.row_labels, pr2.col_labels))
 
-print(mat_df1)
-
 
 #########################################################
 # show results
@@ -168,28 +166,28 @@ scale = alt.Scale(
     scheme='turbo',
 )
 
-#
-# # before svd
-# heat_chart1 = alt.Chart(mat_df1).encode(
-#     alt.X('context:O', axis=alt.Axis(tickSize=0), sort=pr1.row_labels),  # prevent sorting alphabetically
-#     alt.Y('word:O', axis=alt.Axis(tickSize=0), sort=pr1.col_labels),
-# ).mark_rect().encode(
-#     color=alt.Color('sim:Q', scale=scale),
-# ).properties(
-#     width=configs.Heatmap.width,
-#     height=configs.Heatmap.width,
-# )
-#
-#
-# # after svd
-# heat_chart2 = alt.Chart(mat_df2).mark_rect().encode(
-#     alt.X('context', axis=alt.Axis(tickSize=0), sort=pr2.row_labels),  # prevent sorting alphabetically
-#     alt.Y('word', axis=alt.Axis(tickSize=0), sort=pr2.col_labels),
-#     color=alt.Color('sim:Q', scale=scale),
-# ).properties(
-#     width=configs.Heatmap.width,
-#     height=configs.Heatmap.width,
-# )
+
+# before svd
+heat_chart1 = alt.Chart(mat_df1).encode(
+    alt.X('context:O', axis=alt.Axis(tickSize=0), sort=pr1.row_labels),  # prevent sorting alphabetically
+    alt.Y('word:O', axis=alt.Axis(tickSize=0), sort=pr1.col_labels),
+).mark_rect().encode(
+    color=alt.Color('sim:Q', scale=scale),
+).properties(
+    width=configs.Heatmap.width,
+    height=configs.Heatmap.width,
+)
+
+
+# after svd
+heat_chart2 = alt.Chart(mat_df2).mark_rect().encode(
+    alt.X('context', axis=alt.Axis(tickSize=0), sort=pr2.row_labels),  # prevent sorting alphabetically
+    alt.Y('word', axis=alt.Axis(tickSize=0), sort=pr2.col_labels),
+    color=alt.Color('sim:Q', scale=scale),
+).properties(
+    width=configs.Heatmap.width,
+    height=configs.Heatmap.width,
+)
 
 
 st.header('Word x Word Cosine Similarity')
@@ -198,10 +196,10 @@ col1, col2 = st.columns(2)
 # before svd
 with col1:
     st.header('Before SVD')
-    # st.altair_chart(heat_chart1)
+    st.altair_chart(heat_chart1)
 
 
 # after svd
 with col2:
     st.header('After SVD')
-    # st.altair_chart(heat_chart2)
+    st.altair_chart(heat_chart2)
