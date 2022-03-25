@@ -8,10 +8,12 @@
 </div>
 
 
-### Introduction
+### About
 
-This repository contains source code for generating an interactive visualisation that allows a user to explore word similarities based on distributional similarity in a corpus.
+This repository houses the source code for a Python app built with `streamlit`.
 
-### TODO 
+The app enables users to interactively visualize the distributional similarity of words in AO-CHILDES, a corpus of American-English transcribed speech.
 
-make plot_heatmap.py into Streamlit app where cursor pops up words in heatmap row and column
+### Compatibility 
+
+Developed using Python 3.7.9 on Ubuntu 18.04.

@@ -1,26 +1,40 @@
 import numpy as np
+from typing import List, Union, Dict
 from scipy.cluster.hierarchy import linkage, dendrogram
-from typing import Optional, Set
-from cytoolz import itertoolz
+from typing import Optional
+from dataclasses import dataclass
 from sortedcontainers import SortedSet
 
 
-def split(l, split_size):
-    for i in range(0, len(l), split_size):
-        yield l[i:i + split_size]
+@dataclass(frozen=True)
+class PipeLineResult:
+    clustered_sim_mat: np.array
+    row_labels: Optional[List[str]]
+    col_labels: Optional[List[str]]
+    dg0: Dict
+    dg1: Dict
 
 
-def get_sliding_windows(window_size, tokens):
-    res = list(itertoolz.sliding_window(window_size, tokens))
-    return res
+def to_columnar(m: np.array,
+                ) -> Dict[str, List[Union[float, int]]]:
+    """
+    convert a matrix into a dict,
+    where each entry corresponds to a single matrix element:
+    - the row index
+    - the col index
+    - the element's value
+      """
+    res = {'x': [],
+           'y': [],
+           'c': [],
+           }
 
+    for yi in range(m.shape[0]):
+        for xi in range(m.shape[1]):
+            res['y'].append(yi)
+            res['x'].append(xi)
+            res['c'].append(m[yi, xi])
 
-def to_corr_mat(data_mat):
-    mns = data_mat.mean(axis=1, keepdims=True)
-    stds = data_mat.std(axis=1, ddof=1, keepdims=True) + 1e-6  # prevent np.inf (happens when dividing by zero)
-    deviated = data_mat - mns
-    zscored = deviated / stds
-    res = np.matmul(zscored, zscored.T) / len(data_mat)  # it matters which matrix is transposed
     return res
 
 
@@ -30,7 +44,7 @@ def cluster(mat: np.ndarray,
             original_row_words: Optional[SortedSet] = None,
             original_col_words: Optional[SortedSet] = None,
             method: str = 'complete',
-            metric: str = 'cosine'):
+            metric: str = 'cosine') -> PipeLineResult:
 
     print('Clustering...')
     if original_row_words is not None:
@@ -56,9 +70,20 @@ def cluster(mat: np.ndarray,
                          no_plot=True)
 
     res = res[:, dg1['leaves']]  # reorder cols
+
     if original_row_words is None and original_col_words is None:
-        return res, dg0, dg1
+        return PipeLineResult(clustered_sim_mat=res,
+                              row_labels=None,
+                              col_labels=None,
+                              dg0=dg0,
+                              dg1=dg1,
+                              )
     else:
         row_labels = np.array(original_row_words)[dg0['leaves']]
         col_labels = np.array(original_col_words)[dg1['leaves']]
-        return res, row_labels, col_labels, dg0, dg1
+        return PipeLineResult(clustered_sim_mat=res,
+                              row_labels=row_labels,
+                              col_labels=col_labels,
+                              dg0=dg0,
+                              dg1=dg1,
+                              )

@@ -1,8 +1,5 @@
 from typing import List, Tuple, Dict
-
 from sortedcontainers import SortedSet, SortedDict
-
-from simex.utils import get_sliding_windows
 
 
 def get_probe_contexts(probes: SortedSet,
@@ -10,27 +7,32 @@ def get_probe_contexts(probes: SortedSet,
                        context_size: int,
                        preserve_order: bool,
                        min_num_contexts: int = 2,
+                       exclude_punctuation: bool = False,
                        ) -> Tuple[Dict[str, Tuple[str]], SortedSet, SortedSet]:
     # get all probe contexts
     probe2contexts = SortedDict({p: [] for p in probes})
-    contexts_in_order = get_sliding_windows(context_size, tokens)
     context_types = SortedSet()
-    for n, context in enumerate(contexts_in_order[:-context_size]):
-        next_context = contexts_in_order[n + 1]
+    for n, target in enumerate(tokens[:-context_size]):
 
-        # todo this only works for LEFT contexts
-        target = next_context[-1]
-        if target == 'Monster_cookie':
-            print(target)
-        if target in probes:
+        if target not in probes:
+            continue
 
-            if preserve_order:
-                probe2contexts[target].append(context)
-                context_types.add(context)
-            else:
-                single_word_contexts = [(w,) for w in context]
-                probe2contexts[target].extend(single_word_contexts)
-                context_types.update(single_word_contexts)
+        left = tokens[n - context_size - 1:n - 1]
+        right = tokens[n + 1:n + 1 + context_size]
+        context = tuple(left + right)
+
+        if exclude_punctuation:
+            if '.' in context:
+                continue
+
+        # collect
+        if preserve_order:
+            probe2contexts[target].append(context)
+            context_types.add(context)
+        else:
+            single_word_contexts = [(w,) for w in context]
+            probe2contexts[target].extend(single_word_contexts)
+            context_types.update(single_word_contexts)
 
     # exclude entries with too few contexts
     excluded = []
