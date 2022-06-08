@@ -10,7 +10,7 @@
 
 ### About
 
-This repository houses the source code for a Python app built with `streamlit`.
+This repository contains the source code for a Python app built with `streamlit`.
 
 The app enables users to interactively visualize the distributional similarity of words in AO-CHILDES, a corpus of American-English transcribed speech.
 
